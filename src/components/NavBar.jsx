@@ -1,0 +1,23 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import "../css/Navbar.css"; // Assuming you have a CSS file for styling
+
+const NavBar = () => {
+  return (
+    <nav className="navbar">
+      <div className="nabar-brand">
+        <Link to="/" className="nav-link">Movie App</Link>
+      </div>
+      <div className="navbar-links">
+        <Link to="/" className="nav-link">
+          Home
+        </Link>
+        <Link to="/favorites" className="nav-link">
+          Favorites
+        </Link>
+      </div>
+    </nav>
+  );
+};
+
+export default NavBar;
